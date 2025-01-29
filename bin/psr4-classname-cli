@@ -2,12 +2,12 @@
 <?php
 
 use Symfony\Component\Console\Application;
-use Zerotoprod\:namespace\:namespace;
+use Zerotoprod\Psr4ClassnameCli\Psr4ClassnameCli;
 
 require getcwd().'/vendor/autoload.php';
 
 $Application = (new Application());
 
-:namespace::register($Application);
+Psr4ClassnameCli::register($Application);
 
 $Application->run();
