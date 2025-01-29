@@ -1,14 +1,14 @@
 {
-  "name": "zero-to-prod/:slug",
-  "description": ":description",
+  "name": "zero-to-prod/psr4-classname-cli",
+  "description": "A CLI to generate a PSR-4 compliant classname",
   "license": "MIT",
   "type": "library",
   "keywords": [
     "zero-to-prod",
-    ":slug"
+    "psr4-classname-cli"
   ],
   "readme": "./README.md",
-  "time": ":time",
+  "time": "2025-01-29",
   "authors": [
     {
       "name": "David Smith",
@@ -17,13 +17,13 @@
       "role": "maintainer"
     }
   ],
-  "homepage": "https://github.com/zero-to-prod/:slug",
+  "homepage": "https://github.com/zero-to-prod/psr4-classname-cli",
   "support": {
     "email": "dave0016@gmail.com",
-    "issues": "https://github.com/zero-to-prod/:slug/issues",
-    "source": "https://github.com/zero-to-prod/:slug",
-    "docs": "https://zero-to-prod.github.io/:slug/",
-    "security": "https://github.com/zero-to-prod/:slug/blob/main/SECURITY.md"
+    "issues": "https://github.com/zero-to-prod/psr4-classname-cli/issues",
+    "source": "https://github.com/zero-to-prod/psr4-classname-cli",
+    "docs": "https://zero-to-prod.github.io/psr4-classname-cli/",
+    "security": "https://github.com/zero-to-prod/psr4-classname-cli/blob/main/SECURITY.md"
   },
   "funding": [
     {
@@ -34,15 +34,17 @@
   "require": {
     "php": ">=8.1",
     "ext-json": "*",
-    "symfony/console": "^7.2"
+    "symfony/console": "^7.2",
+    "zero-to-prod/psr4-classname": "^71.0",
+    "zero-to-prod/data-model": "^81.9"
   },
   "autoload": {
     "psr-4": {
-      "Zerotoprod\\:namespace\\": "src/"
+      "Zerotoprod\\Psr4ClassnameCli\\": "src/"
     }
   },
   "bin": [
-    "bin/:slug"
+    "bin/psr4-classname-cli"
   ],
   "require-dev": {
     "phpunit/phpunit": "*"
