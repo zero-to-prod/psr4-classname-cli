@@ -44,8 +44,6 @@ jobs:
           tags: |
             davidsmith3/psr4-classname-cli:latest
             davidsmith3/psr4-classname-cli:${{ env.VERSION }}
-          cache-from: type=registry,ref=davidsmith3/psr4-classname-cli:buildcache
-          cache-to: type=registry,ref=davidsmith3/psr4-classname-cli:buildcache,mode=max
           build-args: |
             NODE_ENV=production
           labels: |
