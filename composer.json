@@ -45,7 +45,8 @@
     }
   },
   "bin": [
-    "bin/psr4-classname-cli"
+    "bin/psr4-classname-cli",
+    "bin/zero-to-prod-psr4-classname-cli"
   ],
   "require-dev": {
     "phpunit/phpunit": "<12.0"
